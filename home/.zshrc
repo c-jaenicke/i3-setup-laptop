@@ -201,6 +201,8 @@ alias folders='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn'
 alias grep='grep --color=auto'
 
 
+alias athgit="bash ~/.bin/git-ssh.sh"
+
 ### Bind keys
 #############
 autoload -U compinit
