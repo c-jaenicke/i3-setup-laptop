@@ -31,10 +31,10 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id ~/.bin/poly-launch.sh &
 
 # start launch picom
-# exec_always --no-startup-id ~/.bin/picom-launch.sh &
+ exec_always --no-startup-id ~/.bin/picom-launch.sh &
 
 # set background using feh
-exec_always feh --bg-scale ~/.config/i3/bg.png
+exec_always feh --bg-center ~/.config/i3/bg.jpg
 
 # launch startup script
 exec_always --no-startup-id ~/.bin/startup.sh &
@@ -202,6 +202,10 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# moving workspaces from monitors
+bindsym $mod+Shift+O move container to output left 
+bindsym $mod+Shift+P move container to output right 
 
 
 
