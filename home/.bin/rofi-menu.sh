@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-
-rofi -show run -cycle true 
+# script for showing rofi (window manager and start menu)
+rofi -show run -cycle true

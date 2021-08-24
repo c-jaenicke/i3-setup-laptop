@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# script for staring remote access
 if [ "$1" = "ssh" ] || [ "$2" = "ssh" ] ; then
     echo "-- Started SSH --"
     systemctl start ssh.service

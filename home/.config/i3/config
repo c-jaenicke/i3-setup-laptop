@@ -40,7 +40,7 @@ exec_always feh --bg-center ~/.config/i3/bg.jpg
 exec_always --no-startup-id ~/.bin/startup.sh &
 
 # start synergy on login
-exec ~/.bin/synergy-launch.sh &
+# exec ~/.bin/synergy-launch.sh &
 
 # start dunst
 exec_always --no-startup-id ~/.bin/dunst-launch.sh &
@@ -74,7 +74,10 @@ set $ws10 "10"
 ####################################################################################################
 
 # use i3lock-color to lock screen
-bindsym $mod+Shift+Control+l exec i3lock -i ~/.config/i3/bg.png
+bindsym $mod+Shift+Control+l exec i3lock -i ~/.config/i3/bg.png 
+
+# use i3lock-color to lock screen
+bindsym $mod+Shift+Control+Delete exec i3lock -i ~/.config/i3/bg.png && systemctl suspend
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -204,8 +207,21 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # moving workspaces from monitors
-bindsym $mod+Shift+O move container to output left 
-bindsym $mod+Shift+P move container to output right 
+bindsym $mod+Shift+o move workspace to output left 
+bindsym $mod+Shift+p move workspace to output right 
+
+
+
+####################################################################################################
+# WINDOW SPECIFIC
+####################################################################################################
+# window specific settings
+
+for_window [class="KeePassXC"] floating enabled
+for_window [class="Spotify"] floating enabled
+for_window [class="chatterino"] floating enabled
+for_window [class="Synergy"] floating enabled
+for_window [class="vlc"] floating enabled
 
 
 
