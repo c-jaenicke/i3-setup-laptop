@@ -15,11 +15,18 @@ pacman -S \
         openssh \
         keepassxc \
         ufw \
-        okular \
         synergy \
         picom \
         rofi \
         dunst  \
         neovim \
-        termite \
-        urxvt \
+        rxvt-unicode \
+        gimp \
+        thunderbird
+
+        # font list
+        # ttf-ibm-plex \
+        # ttf-fira-code \
+        # ttf-hack \
+
+echo ----- DONE -----
