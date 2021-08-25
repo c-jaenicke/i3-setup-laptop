@@ -23,8 +23,10 @@ scroll_on_keystroke = true
 cursor_blink = on
 cursor_shape = underline
 
-font = Hack Nerd Font Mono 12
-font = monospace 12
+#font = monospace 12
+#font = IBM Plex Mono 12
+font = Fira Code 12
+#font = Hack Nerd Font Mono 12
 
 
 
