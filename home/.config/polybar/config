@@ -81,7 +81,7 @@ font-3 = siji:pixelsize=10;1
 
 modules-left = i3
 modules-center = date
-modules-right = pulseaudio wired-network wireless-network battery backlight
+modules-right = pulseaudio backlight wired-network wireless-network battery
 
 tray-position = right
 tray-padding = 1
@@ -146,7 +146,6 @@ label-urgent = "  ○"
 label-empty = "  ○"
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [module/date]
 type = internal/date
 
@@ -165,6 +164,21 @@ date = %H:%M
 ; the module will toggle between formats
 date-alt = %A, %d %B %Y
 time-alt = %H:%M:%S
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[module/backlight]
+type = custom/script
+
+exec = light -G 
+
+format =Light: <label>
+label = %output:0:2%%
+
+click-left = light -G
+scroll-up = light -A 5
+scroll-down = light -U 5
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -188,11 +202,11 @@ click-right = pavucontrol &
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/wired-network]
 type = internal/network
-interface = eno1
+interface = enp2s0
 
 [module/wireless-network]
 type = internal/network
-interface = wlp4s0
+interface = wlo1
 
 [module/network]
 type = internal/network
