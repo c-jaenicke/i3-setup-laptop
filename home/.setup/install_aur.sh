@@ -5,13 +5,11 @@
 yay -Su
 
 yay -S \
-        termite \
-        polybar 
+termite \
+polybar 
 
-
-        # font options
-        # nerd-fonts-complete \
-        # nerd-fonts-fira-code \
-
+# font options
+# nerd-fonts-complete \
+# nerd-fonts-fira-code \
 
 echo ----- DONE -----

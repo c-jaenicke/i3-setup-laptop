@@ -5,28 +5,28 @@
 pacman -Syu
 
 pacman -S \
-        git \
-        base-devel
-        firefox \
-        atom \
-        ranger \
-        vlc \
-        tlp \
-        openssh \
-        keepassxc \
-        ufw \
-        synergy \
-        picom \
-        rofi \
-        dunst  \
-        neovim \
-        rxvt-unicode \
-        gimp \
-        thunderbird
+git \
+base-devel
+firefox \
+atom \
+ranger \
+vlc \
+tlp \
+openssh \
+keepassxc \
+ufw \
+synergy \
+picom \
+rofi \
+dunst  \
+neovim \
+rxvt-unicode \
+gimp \
+thunderbird
 
-        # font list
-        # ttf-ibm-plex \
-        # ttf-fira-code \
-        # ttf-hack \
+# font list
+# ttf-ibm-plex \
+# ttf-fira-code \
+# ttf-hack \
 
 echo ----- DONE -----
