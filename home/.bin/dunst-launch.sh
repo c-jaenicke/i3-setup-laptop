@@ -4,4 +4,4 @@
 killall -q dunst
 
 # relaunch dunst
-dunst
+dunst &

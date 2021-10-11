@@ -4,4 +4,4 @@
 killall -q picom
 
 # relaunch picom
-picom
+picom &
