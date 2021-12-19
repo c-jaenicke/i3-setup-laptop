@@ -7,6 +7,10 @@
  * rofi configuration file adopting the new format
  **/
 
+/* Set theme here */
+@theme "meitnerium"
+
+
 configuration {
 	modi: "drun,window,run";
 	font: "FiraCode Nerd Font Mono 12";
@@ -51,7 +55,6 @@ configuration {
 /*	scroll-method: 0;*/
 /*	window-format: "{w}    {c}   {t}";*/
 /*	click-to-exit: true;*/
-	theme: "meitnerium" ;
 /*	max-history-size: 25;*/
 /*	combi-hide-mode-prefix: false;*/
 /*	matching-negate-char: '-' /* unsupported */;*/
@@ -159,4 +162,6 @@ configuration {
       directories-first: true;
       sorting-method:    "name";
   }
+
 }
+
