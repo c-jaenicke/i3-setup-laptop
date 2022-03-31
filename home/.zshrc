@@ -189,14 +189,14 @@ mcd () {
 alias cls="clear"
 alias ..="cd .."
 alias cd..="cd .."
-alias ll="ls -lisa --color=auto"
+alias ll="ls -lA --color=auto"
 alias home="cd ~"
 alias df="df -ahiT --total"
 alias mkdir="mkdir -pv"
 alias mkfile="touch"
 alias rm="rm -rfi"
 alias userlist="cut -d: -f1 /etc/passwd"
-alias ls="ls -CF --color=auto"
+alias ls="ls -F --color=auto"
 alias lsl="ls -lhFA | less"
 alias free="free -mt"
 alias du="du -ach | sort -h"
@@ -209,8 +209,9 @@ alias logs="find /var/log -type f -exec file {} \; | grep 'text' | cut -d' ' -f1
 alias folders='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn'
 alias grep='grep --color=auto'
 
-
+alias vim="nvim"
 alias athgit="bash ~/.bin/git-ssh.sh"
+alias nxsrv="bash ~/.bin/nxsrv"
 
 ### Bind keys
 #############

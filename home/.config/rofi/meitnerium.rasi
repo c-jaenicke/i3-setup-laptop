@@ -8,7 +8,7 @@
     blue2:            #3160f2;
     lightfg:          #fefbec;
     lightbg:          #424b55;
-    background-color: #424b55;
+    background-color: #21262b;
     background:       #21262b;
     foreground:       #dededd;
     border-color:     var(blue2);

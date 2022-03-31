@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# simple script for running zerotier-cli operations
+# because im layz and dont want to type
+
+case $1 in
+    help)
+        echo "help | info | join <ID> | leave <ID> | listnet | listps | startservice | stopservice"
+    ;;
+    info)
+        sudo zerotier-cli info
+    ;;
+    join)
+        sudo zerotier-cli join $2
+    ;;
+    leave)
+        sudo zerotier-cli leave $2
+    ;;
+    listnet)
+        sudo zerotier-cli listnetworks
+    ;;
+    listps)
+        sudo zerotier-cli listpeers
+    ;;
+    startservice)
+        sudo systemctl start zerotier-one.service
+    ;;
+    stopservice)
+        sudo systemctl stop zerotier-one.service
+    ;;
+    *)
+        echo "help | info | join <ID> | leave <ID> | listnet | listps | startservice | stopservice"
+    ;;
+esac

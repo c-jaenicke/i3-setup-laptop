@@ -31,7 +31,8 @@ exec_always --no-startup-id ~/.bin/poly-launch.sh
 # exec_always --no-startup-id ~/.bin/picom-launch.sh
 
 # set background using feh
-exec_always feh --bg-center ~/.config/i3/bg.jpg
+#exec_always feh --bg-center ~/.config/i3/bg.jpg
+exec_always feh --bg-center ~/Bilder/Background-SteamHalloween.png
 
 # launch startup script
 exec_always --no-startup-id ~/.bin/startup.sh
@@ -213,6 +214,8 @@ for_window [class="Spotify"] floating enabled
 for_window [class="chatterino"] floating enabled
 for_window [class="Synergy"] floating enabled
 for_window [class="vlc"] floating enabled
+
+for_window [class="Spotify"] move window to workspace $ws5
 
 ####################################################################################################
 # COLORS

@@ -58,10 +58,14 @@
 !-------------------------------------------------------------------------
 
 ! setting font to standard font
-URxvt.font: xft:Hack Nerd Font Mono:size=12
+URxvt.scrollBar: false
+!URxvt.font: xft:monospace:size=12
+URxvt.font: xft:Fira Code:regular:size=12
 
 ! perl extension settings
-URxvt.perl-ext-common: default,matcher,
+URxvt.perl-ext-common: default,matcher,clipboard
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
-
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
