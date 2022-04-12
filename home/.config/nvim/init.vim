@@ -44,7 +44,6 @@ call plug#end()
 " Vim-Indent-Guides
 let g:indent_guides_enable_on_vim_startup = 1
 
-
 " Syntastic
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
@@ -54,8 +53,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
-
 
 "###################################################################################################
 " CUSTOM STATUSLINE
@@ -112,6 +109,24 @@ filetype plugin on
 
 " enable syntax highlighting
 syntax enable
+
+"###################################################################################################
+" SPELL CHECKER SETTINGS
+"###################################################################################################
+" enable spellcheck for language DE or EN
+" use z= to check for correction
+command SpellDE setlocal spell spelllang=de
+command SpellEN setlocal spell spelllang=en
+
+hi clear SpellBad
+hi clear SpellCap
+hi clear SpellRare
+hi clear SpellLocal 
+
+hi SpellBad cterm=underline, ctermfg=red
+hi SpellCap cterm=underline, ctermfg=yellow
+hi SpellRare cterm=underline, ctermfg=green
+hi SpellLocal cterm=underline, ctermfg=grey
 
 "###################################################################################################
 " settings i have not checked yet and idk what they do 
