@@ -3,7 +3,8 @@
 
 case $2 in 
     univpn)
-    sudo systemctl $1 vpnagentd.service
+        # start cisco vpn for university vpn
+        sudo systemctl $1 vpnagentd.service
     ;;
 
     ssh)

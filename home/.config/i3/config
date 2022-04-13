@@ -37,9 +37,6 @@ exec_always feh --bg-center ~/Bilder/Background-SteamHalloween.png
 # launch startup script
 exec_always --no-startup-id ~/.bin/startup.sh
 
-# start synergy on login
-# exec ~/.bin/synergy-launch.sh &
-
 # start dunst
 exec_always --no-startup-id ~/.bin/dunst-launch.sh &
 
