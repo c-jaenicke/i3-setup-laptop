@@ -73,7 +73,7 @@ font-2 = monospace: size=10
 
 modules-left = i3
 modules-center = date
-modules-right = pac_updates pulseaudio backlight wired-network wireless-network battery
+modules-right = pulseaudio backlight wired-network wireless-network battery
 
 tray-position = right
 tray-padding = 1

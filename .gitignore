@@ -1,4 +1,17 @@
-nxsrv
+# some secret bash files
+nxsrv.sh
+ztc.sh
+
+# background images
 bg.jpg
 bg.png
+
+# plugins and folders
 home/.config/tmux/plugins/
+home/.config/nvim/plugged/
+plug.vim
+
+# random files
+coc-settings.json
+.netrwhist
+
