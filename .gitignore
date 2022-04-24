@@ -12,6 +12,5 @@ home/.config/nvim/plugged/
 plug.vim
 
 # random files
-coc-settings.json
 .netrwhist
 
