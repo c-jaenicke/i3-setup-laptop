@@ -189,7 +189,7 @@ mcd () {
 alias cls="clear"
 alias ..="cd .."
 alias cd..="cd .."
-alias ll="ls -lA --color=auto"
+alias ll="ls -lAh --color=auto"
 alias home="cd ~"
 alias df="df -ahiT --total"
 alias mkdir="mkdir -pv"
@@ -209,9 +209,17 @@ alias logs="find /var/log -type f -exec file {} \; | grep 'text' | cut -d' ' -f1
 alias folders='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn'
 alias grep='grep --color=auto'
 
+# bind neovim to vim
 alias vim="nvim"
+
+# script for authenticating using ssh key
 alias athgit="bash ~/.bin/git-ssh.sh"
-alias nxsrv="bash ~/.bin/nxsrv"
+
+# connect to nextcloud share
+alias nxsrv="bash ~/.bin/nxsrv.sh"
+
+# script for starting some services
+# alias start_service="bash ~/.bin/start_service.sh"
 
 ### Bind keys
 #############

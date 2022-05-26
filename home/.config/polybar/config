@@ -160,11 +160,12 @@ type = custom/script
 exec = light -G 
 
 format =Light: <label>
-label = %output:0:2%%
+label = %output:0:3%%
 
-click-left = light -G
-scroll-up = light -A 5
-scroll-down = light -U 5
+click-left = light -S 10
+click-right = light -S 50
+scroll-up = light -A 2.5
+scroll-down = light -U 2.5
 
 ;##########################################################################
 [module/pac_updates]
