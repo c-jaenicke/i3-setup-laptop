@@ -73,7 +73,7 @@ font-2 = monospace: size=10
 
 modules-left = i3
 modules-center = date
-modules-right = pulseaudio backlight wired-network wireless-network battery
+modules-right = weather pulseaudio backlight wired-network wireless-network battery
 
 tray-position = right
 tray-padding = 1
@@ -166,6 +166,20 @@ click-left = light -S 10
 click-right = light -S 50
 scroll-up = light -A 2.5
 scroll-down = light -U 2.5
+
+;##########################################################################
+[module/weather]
+type = custom/script
+
+exec =
+
+; refresh every 30 minutes
+interval = 1800.0
+
+format =<label>
+label =%output%
+
+click-right =
 
 ;##########################################################################
 [module/pac_updates]

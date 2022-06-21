@@ -111,6 +111,14 @@ filetype plugin on
 syntax enable
 
 "###################################################################################################
+" MARKDOWN LINT SETTINGS
+"###################################################################################################
+" fix all markdown issues
+command MarkdownFix CocCommand markdownlint.fixAll
+
+" more settings in coc settings 
+
+"###################################################################################################
 " SPELL CHECKER SETTINGS
 "###################################################################################################
 " enable spellcheck for language DE or EN

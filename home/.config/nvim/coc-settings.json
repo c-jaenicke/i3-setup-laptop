@@ -4,17 +4,17 @@
     "java.configuration.runtimes": [
         {
         // java 16 oracle jdk for university
-        "name": "jdk-16.0.2",
+        "name": "JavaSE-16",
         "path": "/usr/lib/jvm/jdk-16.0.2"
         }
-    ]
+    ],
 
     // markdown linter settings
     
     "markdownlint.config": {
         "markdownlint.onOpen": true,
         "markdownlint.onSave": true
-    },
+    }
 
 // closing bracket
 }
